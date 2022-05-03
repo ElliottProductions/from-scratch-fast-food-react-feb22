@@ -36,3 +36,8 @@
     transform: rotate(360deg);
   }
 }
+
+.meal img {
+  width: 250px;
+  margin: 25px;
+}
