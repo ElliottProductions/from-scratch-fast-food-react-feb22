@@ -1,24 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
+import OrderForm from './OrderForm';
+
+import { useState } from 'react';
+
+
 
 function App() {
+
+  const [orderName, setOrderName] = useState('Customer #001');
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h3>Order for {orderName}</h3>
+      <OrderForm setOrderName={setOrderName}/>
     </div>
+    
   );
 }
 
