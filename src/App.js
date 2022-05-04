@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import OrderForm from './OrderForm';
 import DropDown from './DropDown';
@@ -24,13 +23,15 @@ function App() {
     <div>
       <h3>Order for {orderName}</h3>
       <OrderImages drinkId={drinkID} sideId={sideId} foodId={foodId}/>
+      <OrderForm setOrderName={setOrderName}/>
       <DropDown setChoice={setDrinkId} itemName={'drink'}/>
       <DropDown setChoice={setFoodId} itemName={'entrée'}/>
       <DropDown setChoice={setSideId} itemName={'side'}/>
+      
       <InstructionsForm instructions={instructions} setInstructions={setInstructions}
         instructionsInput={instructionsInput} setInstructionsInput={setInstructionsInput}/>
       <InstructionsList instructions={instructions}/>
-      <OrderForm setOrderName={setOrderName}/>
+      
     </div>
     
   );
