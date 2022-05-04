@@ -11,7 +11,7 @@ export default function InstructionsForm({ instructions, setInstructions, instru
   return (
     <form onSubmit={handleSubmit}>
       <p>Additional Instructions: <input onChange={e=> setInstructionsInput(e.target.value)}></input></p>
-      <button>Add Instructions</button>
+      <button className="menu">Add Instructions</button>
     </form>
   );
 }

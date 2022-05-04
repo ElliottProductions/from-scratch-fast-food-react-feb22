@@ -20,13 +20,14 @@ function App() {
 
   
   return (
-    <div>
+    <div className="App">
       <h3>Order for {orderName}</h3>
       <OrderImages drinkId={drinkID} sideId={sideId} foodId={foodId}/>
       <OrderForm setOrderName={setOrderName}/>
       <DropDown setChoice={setDrinkId} itemName={'drink'}/>
-      <DropDown setChoice={setFoodId} itemName={'entrée'}/>
+      
       <DropDown setChoice={setSideId} itemName={'side'}/>
+      <DropDown setChoice={setFoodId} itemName={'entrée'}/>
       
       <InstructionsForm instructions={instructions} setInstructions={setInstructions}
         instructionsInput={instructionsInput} setInstructionsInput={setInstructionsInput}/>

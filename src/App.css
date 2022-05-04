@@ -1,8 +1,9 @@
 .App {
-  text-align: center;
-  background-image: src("drivethru.PNG");
-  background-image: repeat no-repeat;
-  background-size: cover;
+  text-align: left;
+  background-color: rgb(253, 176, 9);
+  margin: 50px;
+  padding: 25px;
+  border-radius: 15px;
 }
 
 .App-logo {
@@ -41,7 +42,14 @@
 }
 
 .meal img {
-  width: 250px;
+  height: 200px;
   margin: 25px;
   border-radius: 15px;
+}
+
+.menu {
+  font-style: bold;
+  font-size: large;
+  background-color: rgb(255, 218, 11);
+  color:rgb(0, 0, 0);
 }
